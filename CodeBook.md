@@ -8,7 +8,7 @@ Task 1: Raw train and test data was loaded into R using read.table into variable
 
 Task 2: features.txt was manually observed to identify columns with mean and std variables. The variables with mean() and std() at end of the variable names were selected and a vector called meanStdCols was build. allData was subsetted with meanStdCols and stored into meanStdData.
 
-Task 3: Subject numbers data from y_train.txt and y_test.txt were loaded into R and merged with rbind and stored in allLbls. Then it was merged with meanStdData via cbind and stored in meanStdLblsData. Activity descriptive names available in activity_labels.txt was loaded and stored in activityLabels. A new row of activity descriptive name was added to meanStdLblsData where activity number in meanStdLblsData matached activity number in activityLabels. Then allLbls column was dropped from meanStdLblsData.
+Task 3: Subject numbers data from y_train.txt and y_test.txt were loaded into R and merged with rbind and stored in allLbls. Then it was merged with meanStdData via cbind and stored in meanStdLblsData. Activity descriptive names available in activity_labels.txt was loaded and stored in activityLabels. A new row of activity descriptive name was added to meanStdLblsData where activity number in meanStdLblsData matched activity number in activityLabels. Then allLbls column was dropped from meanStdLblsData.
 
 Task 4: features.txt was loaded into R and subsetted by meanStdCols and stored in meanStdFeatures which was then added to meanStdLblsData via names function.The activity descriptive name column was named as "activity" via colnames function.
 
